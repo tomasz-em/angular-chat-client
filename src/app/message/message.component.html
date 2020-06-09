@@ -1,0 +1,12 @@
+<div class="message"
+    [ngClass]="{'self': message.authorId == authorId}">
+  <div class="content">
+    <span *ngIf="message.authorId != authorId" 
+          class="author">{{message.authorId}}: </span>
+    <span class="text"> {{message.text}}</span>
+    <span *ngIf="isLast" 
+          class="time">
+      {{message.timestamp|date:'shortTime'}}
+    </span>
+  </div>
+</div>

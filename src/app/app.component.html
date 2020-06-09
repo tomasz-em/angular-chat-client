@@ -1,0 +1,17 @@
+<div class="chat">
+	<div class="header">Contact us</div>
+	<div  #container class="messages">
+		<message *ngFor="let message of messages; last as isLast"
+             [message]="message" 
+             [isLast]="isLast">
+    </message>
+	</div>
+	<footer>
+		<textarea #textarea 
+      (keydown)="handleEnterPress($event) "
+      [(ngModel)]="currentMessage"
+      placeholder="Type your message here and press Enter to send…">
+    </textarea>
+    <button (click)="sendMessage()">Send</button>
+	</footer>
+</div>
