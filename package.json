@@ -10,7 +10,7 @@
     "@angular/forms": "5.2.8",
     "@angular/common": "5.2.8",
     "@angular/router": "5.2.8",
-    "socket.io-client": "2.1.0",
+    "socket.io-client": "2.5.0",
     "@angular/compiler": "5.2.8",
     "@types/socket.io-client": "1.4.32",
     "@angular/platform-browser": "5.2.8",
